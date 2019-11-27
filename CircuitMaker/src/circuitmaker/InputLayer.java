@@ -5,19 +5,18 @@
 package circuitmaker;
 
 /**
- *
  * @author Aaron
  */
-public class InputLayer{
+public class InputLayer {
     InputGate[] gates = new InputGate[8];
-    
-    public InputLayer(int n){
+
+    public InputLayer(int n) {
         gates = new InputGate[n];
     }
-    
-    public void feed(boolean[] inputs){
-        for(int i = 0; i < gates.length; i++){
-            gates[i].calculate();
+
+    public void feed(boolean[] inputs) {
+        for (InputGate gate : gates) {
+            gate.calculate();
         }
     }
 }

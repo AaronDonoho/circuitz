@@ -5,15 +5,14 @@
 package circuitmaker;
 
 /**
- *
  * @author Aaron
  */
 public class InputGate extends LogicGate {
-    
+
     boolean input;
-    
-    public void calculate(){
+
+    public void calculate() {
         this.output = this.input;
     }
-    
+
 }

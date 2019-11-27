@@ -10,13 +10,13 @@ package circuitmaker;
  */
 public class Layer {
     LogicGate[] gates;
-    
-    public Layer(int n){
+
+    public Layer(int n) {
         gates = new LogicGate[n];
     }
-    
-    public void feed(boolean[] inputs){
-        for(int i = 0; i < gates.length; i++){
+
+    public void feed(boolean[] inputs) {
+        for (int i = 0; i < gates.length; i++) {
             gates[i].calculate();
         }
     }
